@@ -11,6 +11,18 @@ namespace CSharp_PDP_Intellias
         
         public List<int> numbers = new List<int>();
 
+        public void RandomCollection()
+        {
+            Random random = new Random();
+            numbers.Add(random.Next(0, 10));
+            numbers.Add(random.Next(0, 10));
+            numbers.Add(random.Next(0, 10));
+            numbers.Add(random.Next(0, 10));
+            numbers.Add(random.Next(0, 10));
+            numbers.Add(random.Next(0, 10));
+        }
+
+
         public void ListOfNumbers()
         {
             foreach (int x in numbers)
@@ -20,7 +32,7 @@ namespace CSharp_PDP_Intellias
         }
        
 
-    //Масив в порядку збільшення
+    //в порядку збільшення
     public void Growth()
         {
             
@@ -39,7 +51,7 @@ namespace CSharp_PDP_Intellias
             Console.WriteLine("\nArray2: [{0}]", string.Join(", ", numbers));
         }
 
-        //Масив в порядку зменшення-
+        // в порядку зменшення-
         public void Decrease()
         {
             for (int i = 0; i < numbers.Count; i++)

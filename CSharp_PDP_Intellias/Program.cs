@@ -10,22 +10,12 @@ namespace CSharp_PDP_Intellias
     {
         static void Main(string[] args)
         {
-            Random random = new Random();
+            
             CollectionWithRandom collection = new CollectionWithRandom();
-            collection.numbers.Add(random.Next(0, 10));
-            collection.numbers.Add(random.Next(0, 10));
-            collection.numbers.Add(random.Next(0, 10));
-            collection.numbers.Add(random.Next(0, 10));
-            collection.numbers.Add(random.Next(0, 10));
-            collection.numbers.Add(random.Next(0, 10));
-
-
+            collection.RandomCollection();
             collection.ListOfNumbers();
             collection.Growth();
             collection.Decrease();
-
-
-
 
             Console.ReadLine();
         }
