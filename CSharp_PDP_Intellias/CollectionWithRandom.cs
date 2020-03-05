@@ -14,7 +14,7 @@ namespace CSharp_PDP_Intellias
         public void RandomCollection(int number)
         {
             Random random = new Random();
-            for (int i = 0; i<= number; i++)
+            for (int i = 0; i< number; i++)
             {
                 numbers.Add(random.Next(0, 10));
             }
