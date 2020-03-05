@@ -12,7 +12,7 @@ namespace CSharp_PDP_Intellias
         {
             
             CollectionWithRandom collection = new CollectionWithRandom();
-            collection.RandomCollection();
+            collection.RandomCollection(15);
             collection.ListOfNumbers();
             collection.Growth();
             collection.Decrease();

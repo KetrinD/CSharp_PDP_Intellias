@@ -11,17 +11,14 @@ namespace CSharp_PDP_Intellias
         
         public List<int> numbers = new List<int>();
 
-        public void RandomCollection()
+        public void RandomCollection(int number)
         {
             Random random = new Random();
-            numbers.Add(random.Next(0, 10));
-            numbers.Add(random.Next(0, 10));
-            numbers.Add(random.Next(0, 10));
-            numbers.Add(random.Next(0, 10));
-            numbers.Add(random.Next(0, 10));
-            numbers.Add(random.Next(0, 10));
+            for (int i = 0; i<= number; i++)
+            {
+                numbers.Add(random.Next(0, 10));
+            }
         }
-
 
         public void ListOfNumbers()
         {
